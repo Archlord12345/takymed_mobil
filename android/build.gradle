@@ -29,12 +29,14 @@ allprojects {
 }
 
 subprojects {
-    project.plugins.withType(com.android.build.gradle.BasePlugin.class) {
-        project.android {
-            compileSdkVersion 35
-            buildToolsVersion "35.0.0"
-            defaultConfig {
-                targetSdkVersion 35
+    if (project.name != "app") {
+        project.plugins.withType(com.android.build.gradle.BasePlugin.class) {
+            project.android {
+                compileSdkVersion 35
+                buildToolsVersion "35.0.0"
+                defaultConfig {
+                    targetSdkVersion 35
+                }
             }
         }
     }
