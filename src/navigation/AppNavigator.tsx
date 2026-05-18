@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useAuth } from '../context/AuthContext';
-import { Home, LayoutDashboard, Pill, FileText, User } from 'lucide-react-native';
+import { Home, LayoutDashboard, Pill, FileText, User, Bell, Sparkles } from 'lucide-react-native';
 
 // Screens
 import WelcomeScreen from '../screens/WelcomeScreen';
@@ -20,7 +20,6 @@ import CheckoutScreen from '../screens/CheckoutScreen';
 import PharmacyMgmtScreen from '../screens/PharmacyMgmtScreen';
 import CommercialDashboardScreen from '../screens/CommercialDashboardScreen';
 import CommercialRegisterScreen from '../screens/CommercialRegisterScreen';
-import { Home, LayoutDashboard, Pill, FileText, User, Bell, Sparkles } from 'lucide-react-native';
 import { Colors } from '../utils/Theme';
 
 // Screens
