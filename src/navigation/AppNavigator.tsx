@@ -22,11 +22,11 @@ import CommercialDashboardScreen from '../screens/CommercialDashboardScreen';
 import CommercialRegisterScreen from '../screens/CommercialRegisterScreen';
 import { Colors } from '../utils/Theme';
 
-// Screens
-...
+const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
+
 function MainTabs() {
   const { user } = useAuth();
-  const isAdmin = user?.type === 'admin';
   const isCommercial = user?.type === 'commercial';
 
   return (
