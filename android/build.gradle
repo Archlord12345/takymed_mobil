@@ -29,14 +29,12 @@ allprojects {
 }
 
 subprojects {
-    afterEvaluate { project ->
-        if (project.hasProperty('android')) {
-            project.android {
-                compileSdkVersion 35
-                buildToolsVersion "35.0.0"
-                defaultConfig {
-                    targetSdkVersion 35
-                }
+    project.plugins.withType(com.android.build.gradle.BasePlugin.class) {
+        project.android {
+            compileSdkVersion 35
+            buildToolsVersion "35.0.0"
+            defaultConfig {
+                targetSdkVersion 35
             }
         }
     }
